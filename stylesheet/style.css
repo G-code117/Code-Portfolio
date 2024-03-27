@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+--blue-tag: rgba(11, 139, 28, 0.533);
+--text-color: white;
+--electric: rgba(118, 221, 38, 0.53);
+--header-footer: rgb(132, 132, 8);
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "gothic";
+    background-color: var(--blue-tag);
+    color: var(--text-color);
+}
+.Subtitle{
+    font-size: 80px;
+    font-family: 'Franklin Gothic';
+    background-color: aqua;
+    background: -webkit-linear-gradient(140deg, yellow 20%, blue 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+header{
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--header-footer);
+    box-shadow: 0 70px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1{
+    background-color: var(--blue-tag);
+    margin: 0px;
+    font-size: 10vmax;
+    line-height: 80%;
+    background: -webkit-linear-gradient(140deg, yellow 20%,blue 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:rgba(238, 130, 238, 0.318);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: gold;
+    font-size: large;
+    font-family: 'Roboto';
+}
+nav a:hover {
+    background-size: 300px 300px;
+    color:rgba(7, 7, 204, 0.804)
+
+}
+main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.hero {
+    background: rgb(3, 147, 230);
+    min-height: 30vh;
+    justify-content: center;
+    padding: 2% 6%;
+    align-items: flex-end;
+    text-align: center;
+
+}
+.hero div {
+    flex: 0 0 0 90%;
+}
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-section {
+    margin: 25px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.page-section h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 8px solid rgb(11, 241, 241);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+.page-section > div {
+    flex: 1;
+}
+.page-section p {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 32px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-item {
+    border: 5px solid darkcyan;
+    display: flex;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% -1em);
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: var(--electric);
+}
+.contact address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.contact address a {
+    color: var(--text-color);
+    padding: 5px;
+    font-size: 2rem;
+    font-family: "Roboto";
+    text-decoration: none;
+    display: inline-block;
+}
+.contact address a:hover {
+    color: black;
+
+}
